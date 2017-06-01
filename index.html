@@ -9,7 +9,32 @@
 	<div class="reveal">
 		<div class="slides">
 
+			<!--
+			<span style="color: lime">EMPHasis</span>
+			-->
+			<!--
+						<section>
+							<h4></h4>
+							<p class="fragment" data-autoslide="2200"></p>
+						</section>
+			-->
 
+			<!--
+			 intro - 10 mins to show lots of info, so questions after please
+
+			 Outcome - What do the attendees want to get from this presentation
+			    Help the team understand the new team and principles.
+
+             Our message -
+                How to engage the team
+                How will this team help my team.
+
+                Agenda - (past, present, future)
+                    Current situation
+                    Team Principles and Practices
+                    Where to next
+
+			-->
 
 
 			<section
@@ -20,15 +45,57 @@
 				</h1>
 			</section>
 
-			<section data-transition="slide"
+			<section>
+				<blockquote>
+					"I would have made this presentation <span style="color: lime">shorter</span>, but I didn't have the time..."
+				</blockquote>
+				<br/>
+				<!--<p style="font-size: 0.8em">&mdash; Mick Love, 2017, misquoting someone else</p>-->
+				<span style="color: lightgoldenrodyellow; font-size: 0.65em; font-style: italic">&gt; Mick Love, 2017, misquoting someone else</span>
+			</section>
+
+			<section data-transition="fade-in" data-transition-speed="slow">
+				<h3>Agenda</h3>
+				<ul>
+					<li>Why</li>
+					<li>Team principles</li>
+					<li>Team practices</li>
+					<li>Where to next...</li>
+				</ul>
+			</section>
+
+			<section data-transition="fade-in" data-transition-speed="slow">
+				<h1>What was done</h1>
+				<img src="img/giants.jpg" height="400">
+			</section>
+
+			<section style="font-size: 0.6em">
+				<p>Move to AWS</p>
+				<p>Migration of Bamboo, Bitbucket, and Octopus from on-prem server to cloud</p>
+				<p>Prod SQL Server hosted on a Physical Server at Virtual Offis was migrated to AWS Multi-AZ RDS, which is now located in
+					three separate zones in AU.</p>
+				<p>Moving BSL(s) and Fxsnet to AWS, utilizing AutoScale to horizontally expand FXSNET, BSLs when needed.</p></p>
+				<p>Established a resilient direct connect private link between Virtual Offis and AWS.</p>
+				<p>Brexit</p>
+				<p>Trumpageddon</p>
+				<p>Pipeline</p>
+				<p>RDS for x Number of environments is completely built using the pipeline.</p>
+				<p>Environment refresh process was born, meaning the creation of x Number of required environments on demand.</p>
+				<p>Version controlling applications.</p>
+				<p>Performance Testing.</p>
+				<p>CI Process - Automated tests run nightly which gives us fast feedback loop.</p>
+				<p>Release Management and Support.</p>
+				<p><span style="color: lime">etc...</span></p>
+			</section>
+
+			<section data-transition="fade-in"
 			         data-transition-speed="slow">
 				<p>Let's start with...</p>
 			</section>
 
-			<section>
+			<section data-transition="fade-in" data-transition-speed="slow">
 				<h1>WHY?</h1>
 				<p class="fragment" data-autoslide="2200">To grow our business, we need to:</p>
-				<p class="fragment" data-autoslide="2200">Align the goals of the business with IT</p>
 				<p class="fragment" data-autoslide="2200">Reduce time to market</p>
 				<p class="fragment" data-autoslide="2200">Reduce cost of infrastructure</p>
 				<p class="fragment" data-autoslide="2200">Eliminate outages</p>
@@ -36,13 +103,13 @@
 				<p class="fragment">Increase scalability <span style="font-size: 0.65em">(e.g. Brexit, Trump, Yahoo)</span></p>
 			</section>
 
-			<section>
+			<section data-transition="fade-in" data-transition-speed="slow">
 				<section>
 					<p style="font-size: 1.25em">
-						<span style="font-style: italic">one metric that matters is <br />"the time between creating a business hypotheses and having the empirical data needed to either prove or disprove it".</span>
+						<span style="font-style: italic">one metric that matters is <br/>"the time between creating a business hypotheses and having the empirical data needed to either prove or disprove it".</span>
 						<br/>
 					</p>
-					<span style="color: darkgrey; font-size: 0.65em">| Some smart business guy, on the web</span>
+					<span style="color: lightgoldenrodyellow; font-size: 0.65em">| Some smart business guy, on the web</span>
 				</section>
 
 				<section>
@@ -51,198 +118,361 @@
 
 				<section>
 					<h4>We need to remove our bottlenecks...</h4>
+					<img src="img/simpsons-jam.png" height="200">
+					<p class="fragment" data-autoslide="2200">Environment Creation</p>
+					<p class="fragment" data-autoslide="2200">Code deployment</p>
+					<p class="fragment" data-autoslide="2200">Test setup and execution</p>
+					<p class="fragment" data-autoslide="2200">Overly tight architecture</p>
 				</section>
 
-				<section data-autoslide="3000"
-				         data-background-image="img/simpsons-jam.png"
-				         data-background-size="800px"
-				>
+				<!--<section data-background-image="img/simpsons-jam.png"-->
+				<!--data-background-size="800px"-->
+				<!--&gt;-->
 
+			</section>
+			<!--<section>Environment Creation</section>-->
+			<!--<section>Code deployment</section>-->
+			<!--<section>Test setup and execution</section>-->
+			<!--<section>Overly tight architecture</section>-->
+			<!--</section>-->
+
+
+			<section data-transition="fade-in" data-transition-speed="slow">
+
+				<!--<section><p></p>The 'State of Devops' report indicates the following 3 points as the best indicators of IT performance...</section>-->
+				<section>
+					<h3>IT Performance predictors</h3>
+					<p>The 'State of Devops' report indicates the following 3 points as the <span style="color: lime">best indicators</span>
+						of IT performance...</p>
+					<p class="fragment" data-autoslide="2200">1. Version control of all Production artifacts</p>
+					<p class="fragment" data-autoslide="2200">2. Continuous Integration and Deployment</p>
+					<p class="fragment" data-autoslide="2200">3. Automated acceptance testing</p>
 				</section>
-				<section>Environment Creation</section>
-				<section>Code deployment</section>
-				<section>Test setup and execution</section>
-				<section>Overly tight architecture</section>
+				<!--<section data-transition="slide">-->
+				<!--Version control of all Production artifacts-->
+				<!--</section>-->
+				<!--<section data-transition="slide">-->
+				<!--Continuous Integration and Deployment-->
+				<!--</section>-->
+				<!--<section data-transition="slide">-->
+				<!--Automated acceptance testing-->
+				<!--</section>-->
 			</section>
 
 
 			<section>
-				<section><h3>Performance predictors</h3></section>
-				<section>The 'State of Devops' report indicates the following points as the best indicators of IT performance...</section>
-				<section data-transition="slide">
-					Version control of all Production artifacts
-				</section>
-				<section data-transition="slide">
-					Continuous Integration and Deployment
-				</section>
-				<section data-transition="slide">
-					Automated acceptance testing
-				</section>
-			</section>
-
-
-			<section>
-				<section><h3>So, how do WE get there...?</h3></section>
+				<section><h3>So, how do <span style="color: lime">WE</span> get there...?</h3></section>
 				<section>By working together...</section>
-				<section>The <span style="color: lime">Tech Foundation Team</span> will NOT just be about:</section>
-				<section>Tools</section>
-				<section>Automation</section>
-				<section>Access Rights</section>
-				<section>and ....</section>
+				<section>The <span style="color: lime">Tech Foundation Team</span> will NOT just be about:
+					<p class="fragment" data-autoslide="2200">Tools</p>
+					<p class="fragment" data-autoslide="2200">Automation</p>
+					<p class="fragment" data-autoslide="2200">Access rights</p>
+					<p class="fragment" data-autoslide="2200">and...</p>
+				</section>
+				<!--<section>Tools</section>-->
+				<!--<section>Automation</section>-->
+				<!--<section>Access Rights</section>-->
+				<!--<section>and ....</section>-->
 			</section>
 
-			<section
-				data-autoslide="5000">
-				<h2 style="color: lime">Clouds,<br/>Unicorns and Rainbows</h2>
+			<section data-transition="fade-in" data-transition-speed="slow">
+				<h3 style="color: lime">Clouds,<br/>Unicorns and Rainbows</h3>
 				<img src="img/unicorn.jpg" height="302" width="500">
 			</section>
 
-			<section>
-				<section>The <span style="color: lime">Tech Foundation Team</span> is ALSO about:</section>
-				<section>Communication</section>
-				<section>Integration</section>
-				<section>Relationships</section>
-			</section>
-
-			<section><h1>TEAM PRINCIPLES</h1></section>
-
-			<section>
-				<section><h2>Culture</h2>
-				</section>
-				<section><p>People First > Process > Tools</p>
+			<section data-transition="fade-in" data-transition-speed="slow">
+				<section>The <span style="color: lime">Tech Foundation Team</span> is ALSO about:
+					<p class="fragment" data-autoslide="2200">Communication</p>
+					<p class="fragment" data-autoslide="2200">Consultation and Enablement</p>
+					<p class="fragment" data-autoslide="2200">Relationships</p>
 				</section>
 			</section>
 
-			<section>
-				<section><h2>Automation</h2></section>
-				<section>
-					<p>Infrastructure As Code</p>
-				</section>
-				<section>
-					<p>Patches and Hacks are <span style="color: red">NOT</span> applied along the line</p>
-					<img src="img/stunned.gif"/>
-				</section>
-				<section><p>Repeatability and reliability through our pipeline</p></section>
+			<!--
+					             _            _       _
+					  _ __  _ __(_)_ __   ___(_)_ __ | | ___  ___
+					 | '_ \| '__| | '_ \ / __| | '_ \| |/ _ \/ __|
+					 | |_) | |  | | | | | (__| | |_) | |  __/\__ \
+					 | .__/|_|  |_|_| |_|\___|_| .__/|_|\___||___/
+					 |_|                       |_|
+			-->
+
+			<section data-transition="fade-in" data-transition-speed="slow">
+				<h2 style="color: lightgoldenrodyellow">Team <span style="color: lime">Principles</span></h2>
+				<p class="fragment" data-autoslide="2200">People first &gt; Process &gt; Tools</p>
+				<p class="fragment" data-autoslide="2200">Infrastructure As Code</p>
+				<p class="fragment" data-autoslide="2200">Security As Code</p>
+				<p class="fragment" data-autoslide="2200">Repeatability and reliability through our pipeline</p>
+				<p class="fragment" data-autoslide="2200">...</p>
 			</section>
 
-			<section>
-				<section><h2>Responsibility / Transparency</h2></section>
-				<section>
-					<p><span style="color:lime">Everybody</span> has responsibility for the release process and feedback</p>
-					<img src="img/officespace.gif" height="400px"/>
-				</section>
-				<section><p>Everyone knowing what production looks like</p></section>
-				<section><p>Done means ...</p></section>
-				<section><p>... it's in production</p></section>
+			<section data-transition="fade-in" data-transition-speed="slow">
+				<!--<section><h2>Automation</h2></section>-->
+				<h3 style="color: lightgoldenrodyellow">Team Principles</h3>
+				<p><span style="color:lime">Everybody</span> has responsibility for the release
+					process and feedback</p>
+				<p class="fragment" data-autoslide="2200"><span style="color:lime">Everyone</span> knowing what production looks like
+				</p>
+				<p class="fragment" data-autoslide="2200">Done means, ...</p>
+				<p class="fragment" data-autoslide="2200">... It's in production</p>
+
+				<!--<section>-->
+				<!--<p>Infrastructure As Code</p>-->
+				<!--</section>-->
+				<!--<section><p>Repeatability and reliability through our pipeline</p></section>-->
 			</section>
 
-			<section>
-				<section><h2>Measurement</h2>
-				</section>
+			<section data-transition="fade-in" data-transition-speed="slow">
+				<p>Patches and Hacks are <span style="color: red">NOT</span> applied along the line</p>
+				<img src="img/stunned.gif"/>
+			</section>
+
+			<!--<section>-->
+			<!--<section><h2>Responsibility / Transparency</h2></section>-->
+			<!--<section>-->
+			<!--<p><span style="color:lime">Everybody</span> has responsibility for the release process and feedback</p>-->
+			<!--<img src="img/officespace.gif" height="400px"/>-->
+			<!--</section>-->
+			<!--<section><p><span style="color: lime">Everyone</span> knowing what production looks like</p></section>-->
+			<!--<section><p>Done means ...</p></section>-->
+			<!--<section><p>... it's in production</p></section>-->
+			<!--</section>-->
+
+			<section data-transition="fade-in" data-transition-speed="slow">
+				<h3 style="color: lightgoldenrodyellow">Team Principles</h3>
 				<section>
-					<p>Measure everything, be metrics driven</p>
+					<br/>
+					<p>Measure <span style="color: lime">everything</span>, be metrics driven</p>
 					<img src="img/measure.gif" height="400px"/>
 				</section>
-				<section>
-					<h3>MTTR, MTBF, MTTF, all the FLAs</h3>
-					<img src="img/measure2.png" height="400px"/>
-				</section>
-			</section>
-
-			<section><h1>TEAM PRACTICES</h1></section>
-
-			<section>
-				<section>
-					<h2>Develop systems not software</h2>
-				</section>
-				<section><p>Everything in version control</p></section>
-				<section><p>Binaries are built once</p></section>
-				<section><p>The application package is immutable and not changed between environments</p></section>
-			</section>
-
-			<section>
-				<section>
-					<h2>Collaboration</h2>
-				</section>
-				<section><p>Pairing, training each other</p></section>
-				<section><p>Not just <span style="color:lime">dev</span>ops, should be <span style="color:lime">*</span>ops</p></section>
-				<section>
-					<p>Or, for the regex'ers</p>
-					<img src="img/regex.png" height="300px"/>
-				</section>
 			</section>
 
 
+			<!--<section data-transition="fade-in" data-transition-speed="slow">-->
+			<!--<h3 style="color: lightgoldenrodyellow">Team Principles</h3>-->
+			<!--<section>-->
+			<!--<h4>Metrics - follow best practices...</h4>-->
+			<!--<img src="img/measure2.png" height="400px"/>-->
+			<!--<p>MTTR, MTBF, MTTF, all the FLAs</p>-->
+			<!--</section>-->
+			<!--</section>-->
+
+			<!--<section><h1>TEAM PRACTICES</h1></section>-->
+
+
+			<!--
+
+							           _   _
+				  _ __  _ __ __ _  ___| |_(_) ___ ___  ___
+				 | '_ \| '__/ _` |/ __| __| |/ __/ _ \/ __|
+				 | |_) | | | (_| | (__| |_| | (_|  __/\__ \
+				 | .__/|_|  \__,_|\___|\__|_|\___\___||___/
+				 |_|
+
+			-->
+
+
 			<section>
-				<section><h3><span style="color:lime">Infrastructure as code</span> (again!)</h3></section>
+				<h2 style="color: lightgoldenrodyellow">Team <span style="color: lime">Practices</span></h2>
+				<p>Develop systems, not software</p>
+				<p class="fragment" data-autoslide="2200">Binaries are built <span style="color: lime">once</span></p>
+				<p class="fragment" data-autoslide="2200">The application package is <span style="color: lime">immutable</span> and not
+					changed between environments</p>
+				<p class="fragment" data-autoslide="2200"><span style="color: lime">Everything</span> in version control</p>
+				<p class="fragment" data-autoslide="2200">These slides...,</p>
+			</section>
+
+			<section data-transition="fade-in" data-transition-speed="slow">
+				<p style="font-size: 1.5em">.... in version control</p>
+				<img src="img/slides.png" height="450px"/>
+			</section>
+
+			<section data-transition="fade-in" data-transition-speed="slow">
+				<h3 style="color: lightgoldenrodyellow">Team <span style="color: lime">Practices</span></h3>
+				<p style="font-size: 1.3em">Automate</p>
+				<ul>
+					<li>Testing</li>
+					<li>Workflows</li>
+					<li>Infrastructure</li>
+					<li>Security</li>
+					<li>Everything</li>
+				</ul>
+				<p class="fragment" data-autoslide="2200">Build quality in</p>
+			</section>
+
+			<section data-transition="fade-in" data-transition-speed="slow">
+				<h3 style="color: lightgoldenrodyellow">Team <span style="color: lime">Practices</span></h3>
+				<p>Collaboration - Pairing, training each other</p>
+				<p class="fragment" data-autoslide="2200">Not just <span style="color:lime">dev</span>ops, should be <span
+					style="color:lime">*</span>ops</p>
+			</section>
+
+			<section data-transition="fade-in" data-transition-speed="slow">
+				<p>Or, for the regex'ers</p>
+				<img src="img/regex.png" height="300px"/>
+			</section>
+
+
+			<!--<section>-->
+			<!--<section>-->
+			<!--<h2>Collaboration</h2>-->
+			<!--</section>-->
+			<!--<section><p>Pairing, training each other</p></section>-->
+			<!--<section><p>Not just <span style="color:lime">dev</span>ops, should be <span style="color:lime">*</span>ops</p></section>-->
+			<!--<section>-->
+			<!--<p>Or, for the regex'ers</p>-->
+			<!--<img src="img/regex.png" height="300px"/>-->
+			<!--</section>-->
+			<!--</section>-->
+
+
+			<section data-transition="fade-in" data-transition-speed="slow">
+
+				<section>
+					<h3 style="color: lightgoldenrodyellow">Team <span style="color: lime">Practices</span></h3>
+					<p style="font-size: 1.3em"><span style="color:lime">Infrastructure as code</span> (again!)</p>
+				</section>
 				<section><p>What does that even mean?</p></section>
 				<section>
-					<p >
-						<span style="font-style: italic">"The application of methods from <span style="color: lime">software development</span> to management of IT infrastructure"</span>
-						<br/><span style="color: grey; font-size: 0.7em">| Some architect, once, on the web</span></p></section>
-				<section>Testing is a <span style="color: lime">software development</span> method!! </section>
-				<section>We should apply it to <span style="color: lime">infrastructure!!</span></section>
-				<section>We can get fast feedback when our infrastructure doesnt work, save time, save <span style="color: lime">money...</span></span></section>
+					<p>
+						<span style="font-style: italic">"The application of methods from <span
+							style="color: lime">software development</span> to management of IT infrastructure"</span>
+						<br/><span style="color: lightgoldenrodyellow; font-size: 0.7em">| Some architect, once, on the web</span></p>
+				</section>
+				<section>Testing is a <span style="color: lime">software development</span> method!!</section>
+				<section>We should apply it to<br/> <span style="color: lime">infrastructure and security!!</span></section>
+				<section>We can get fast feedback when our infrastructure doesnt work, save time, save <span
+					style="color: lime">money...</span></span></section>
 				<section>We need another test pyramid!</section>
 			</section>
 
 
-			<section>
+			<section data-transition="fade-in" data-transition-speed="slow">
+
 				<section>
-					<h3>The infrastructure test pyramid</h3>
+					<h3 style="color: lightgoldenrodyellow">Team <span style="color: lime">Practices</span></h3>
+					<p>The infrastructure test pyramid</p>
 					<img src="img/pyramid.png" height="347px"/>
 				</section>
-'
+				'
 				<section style="top: 172.5px; display: none;" class="future" hidden="" aria-hidden="true">
-					<p style="font-size: 1.5em">Unit tests</p>
-					<ul>
-						<li>Pipeline core</li>
-						<li>Scripts</li>
-					</ul>
-					<p style="font-size: 1.5em">Integration tests</p>
-					<ul>
-						<li>Packages installed</li>
-						<li>Services running</li>
-						<li>Ports listening</li>
-					</ul>
+					<h3 style="color: lightgoldenrodyellow">Team <span style="color: lime">Practices</span></h3>
+					<div style="text-align: left;">
+						<p style="font-size: 1.1em">Unit tests</p>
+						<ul>
+							<li>Pipeline core</li>
+							<li>Scripts</li>
+						</ul>
+						<p style="font-size: 1.1em">Integration tests</p>
+						<ul>
+							<li>Packages installed</li>
+							<li>Services running</li>
+							<li>Ports listening</li>
+							<li>Security Groups enabled</li>
+						</ul>
+					</div>
+
 				</section>
 
-				<section>
-				<h4>Example Integration Test</h4>
-	<pre><code>
-		describe package('nginx') do
-		   it { should be_installed }
-		end
+				<!--<section>-->
+				<!--<h4>Example Integration Test</h4>-->
+				<!--<pre><code>-->
+				<!--describe package('nginx') do-->
+				<!--it { should be_installed }-->
+				<!--end-->
 
-		describe service('nginx') do
-		   it { should be_enabled }
-		   it { should be_running }
-		end
+				<!--describe service('nginx') do-->
+				<!--it { should be_enabled }-->
+				<!--it { should be_running }-->
+				<!--end-->
 
-		describe port(8080) do
-		   it { should be_listening }
-		end
-	</code></pre>
-				</section>
+				<!--describe port(8080) do-->
+				<!--it { should be_listening }-->
+				<!--end-->
+				<!--</code></pre>-->
+				<!--</section>-->
 
-				<section>
-					<h3>Infrastructure smoke tests</h3>
+				<section data-transition="fade-in" data-transition-speed="slow">
+
+					<h3 style="color: lightgoldenrodyellow">Team <span style="color: lime">Practices</span></h3>
+					<p style="font-size: 1.5em">Infrastructure smoke tests</p>
 					<img src="img/smoke.png"/>
 				</section>
 			</section>
-			<section>
+
+			<section data-transition="fade-in" data-transition-speed="slow">
+
 				<p>Unit testing bash and powershell in the same day</p>
 				<img src="img/unit_test_scripts.gif">
 			</section>
-			<section>
-				<h3 >Next Steps</h3>
-				<section>Phase 1: Identify the current tasks for the team, prioritise them</section>
-				<section>Phase 2: Setup engagement structure for our customers</section>
-				<section>Phase 3: ??????????? </section>
+
+			<section data-transition="fade-in" data-transition-speed="slow">
+				<section>
+					<p class="fragment" data-autoslide="2200">Phase 1: Identify the current tasks for the team, prioritise them</p>
+					<p class="fragment" data-autoslide="2200">Phase 2: Setup engagement structure for our customers</p>
+					<p class="fragment" data-autoslide="2200">Phase 3: ???????????</p>
+				</section>
+				<h2 style="color: lightgoldenrodyellow">Next Steps</h2>
 				<section>
 					<p>Phase 4: Profit!</p>
 					<img src="img/profit.png"/>
 				</section>
+			</section>
+
+			<section>
+				<h4>Current and Roadmap Items</h4>
+				<div style="text-align: left;">
+					<p class="fragment" style="font-size: 0.8em" data-autoslide="2200">Offis Migration</p>
+					<p class="fragment" style="font-size: 0.8em" data-autoslide="2200">Environment Refresh Handover</p>
+					<p class="fragment" style="font-size: 0.8em" data-autoslide="2200">Pipeline</p>
+					<p class="fragment" style="font-size: 0.8em" data-autoslide="2200">ATS VPN connectivity</p>
+					<p class="fragment" style="font-size: 0.8em" data-autoslide="2200">Automate Performance testing (with multi region,
+						serverless, capability)</p>
+					<p class="fragment" style="font-size: 0.8em" data-autoslide="2200">Logging</p>
+					<p class="fragment" style="font-size: 0.8em" data-autoslide="2200">Contract based testing (PACT)</p>
+					<p class="fragment" style="font-size: 0.8em" data-autoslide="2200">etc...</p>
+				</div>
+			</section>
+
+
+			<!--<section>-->
+			<!--<h3>Next Steps</h3>-->
+			<!--<section>Phase 1: Identify the current tasks for the team, prioritise them</section>-->
+			<!--<section>Phase 2: Setup engagement structure for our customers</section>-->
+			<!--<section>Phase 3: ???????????</section>-->
+			<!--<section>-->
+			<!--<p>Phase 4: Profit!</p>-->
+			<!--<img src="img/profit.png"/>-->
+			<!--</section>-->
+			<!--</section>-->
+			<section>
+				<h2>Recap</h2>
+				<div style="text-align: left;">
+					<ul>
+						<li style="font-size: 1.1em">Principles</li>
+						<li style="font-size: 0.5em">People over process, work together</li>
+						<li style="font-size: 0.5em">Infrastructure (and security) As Code</li>
+						<li style="font-size: 0.5em">Be metric driven</li>
+						<li style="font-size: 0.5em">Ensure we have a reliable, repeatable and transparent process</li>
+					</ul>
+					<ul>
+						<li style="font-size: 1.1em">Practices</li>
+						<li style="font-size: 0.5em">Everything in Version control... no hands on keyboards on release day</li>
+						<li style="font-size: 0.5em">Automate ALL the things</li>
+						<li style="font-size: 0.5em">Plan Do Check Act, repeat</li>
+					</ul>
+				</div>
+			</section>
+
+			<section>
+				<h2>Up Next</h2>
+				<div style="text-align: left;">
+					<ul>
+						<li style="font-size: 1.1em">Organise priorities</li>
+						<li style="font-size: 1.1em">Engagement model</li>
+						<li style="font-size: 1.1em">Offis, Elasticsearch, Pipeline, RAAS, PACT, etc...</li>
+					</ul>
+				</div>
 			</section>
 
 			<section>
@@ -252,6 +482,8 @@
 				<section>
 					<p>The Platypus</p>
 					<img src="img/platypus.gif">
+					<h3><img src="img/slack.jpeg" height="30px"/>&nbsp; #TECH-FOUNDATIONS</h3>
+
 				</section>
 			</section>
 
@@ -268,95 +500,95 @@
 
 	<script src="scripts/reveal.js"></script>
 	<script>
-		Reveal.initialize({
+      Reveal.initialize({
 
-			// Display controls in the bottom right corner
-			controls: true,
+        // Display controls in the bottom right corner
+        controls: true,
 
-			// Display a presentation progress bar
-			progress: true,
+        // Display a presentation progress bar
+        progress: true,
 
-			// Set default timing of 2 minutes per slide
-			defaultTiming: 120,
+        // Set default timing of 2 minutes per slide
+        defaultTiming: 120,
 
-			// Display the page number of the current slide
-			slideNumber: false,
+        // Display the page number of the current slide
+        slideNumber: false,
 
-			// Push each slide change to the browser history
-			history: false,
+        // Push each slide change to the browser history
+        history: false,
 
-			// Enable keyboard shortcuts for navigation
-			keyboard: true,
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
 
-			// Enable the slide overview mode
-			overview: true,
+        // Enable the slide overview mode
+        overview: true,
 
-			// Vertical centering of slides
-			center: true,
+        // Vertical centering of slides
+        center: true,
 
-			// Enables touch navigation on devices with touch input
-			touch: true,
+        // Enables touch navigation on devices with touch input
+        touch: true,
 
-			// Loop the presentation
-			loop: false,
+        // Loop the presentation
+        loop: false,
 
-			// Change the presentation direction to be RTL
-			rtl: false,
+        // Change the presentation direction to be RTL
+        rtl: false,
 
-			// Randomizes the order of slides each time the presentation loads
-			shuffle: false,
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
 
-			// Turns fragments on and off globally
-			fragments: true,
+        // Turns fragments on and off globally
+        fragments: true,
 
-			// Flags if the presentation is running in an embedded mode,
-			// i.e. contained within a limited portion of the screen
-			embedded: false,
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
 
-			// Flags if we should show a help overlay when the questionmark
-			// key is pressed
-			help: true,
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
 
-			// Flags if speaker notes should be visible to all viewers
-			showNotes: false,
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
 
-			// Global override for autolaying embedded media (video/audio/iframe)
-			// - null: Media will only autoplay if data-autoplay is present
-			// - true: All media will autoplay, regardless of individual setting
-			// - false: No media will autoplay, regardless of individual setting
-			autoPlayMedia: null,
+        // Global override for autolaying embedded media (video/audio/iframe)
+        // - null: Media will only autoplay if data-autoplay is present
+        // - true: All media will autoplay, regardless of individual setting
+        // - false: No media will autoplay, regardless of individual setting
+        autoPlayMedia: null,
 
-			// Number of milliseconds between automatically proceeding to the
-			// next slide, disabled when set to 0, this value can be overwritten
-			// by using a data-autoslide attribute on your slides
-			autoSlide: 0,
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
 
-			// Stop auto-sliding after user input
-			autoSlideStoppable: true,
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
 
-			// Use this method for navigation when auto-sliding
-			autoSlideMethod: Reveal.navigateNext,
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: Reveal.navigateNext,
 
-			// Enable slide navigation via mouse wheel
-			mouseWheel: false,
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
 
-			// Hides the address bar on mobile devices
-			hideAddressBar: true,
+        // Hides the address bar on mobile devices
+        hideAddressBar: true,
 
-			// Opens links in an iframe preview overlay
-			previewLinks: false,
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
 
-			// Transition style
-			transition: 'slide', // none/fade/slide/convex/concave/zoom
+        // Transition style
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
 
-			// Transition speed
-			transitionSpeed: 'default', // default/fast/slow
+        // Transition speed
+        transitionSpeed: 'default', // default/fast/slow
 
-			// Transition style for full page slide backgrounds
-			backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
 
-			// Number of slides away from the current that are visible
-			viewDistance: 3,
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
 
 //			// Parallax background image
 //			parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
@@ -370,36 +602,36 @@
 //			parallaxBackgroundHorizontal: null,
 //			parallaxBackgroundVertical: null,
 //
-			// The display mode that will be used to show slides
-			display:                 'block',
-			// Parallax background image
+        // The display mode that will be used to show slides
+        display:                 'block',
+        // Parallax background image
 //			parallaxBackgroundImage: 'img/boambee.png', // e.g. "https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg"
 //			parallaxBackgroundImage: 'img/space-parallax.jpg', // e.g. "https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg"
 //			parallaxBackgroundImage: 'img/balloons-1920x1080.jpg', // e.g. "https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg"
-			parallaxBackgroundImage: 'img/reveal-parallax.jpg', // e.g. "https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg"
+        parallaxBackgroundImage: 'img/reveal-parallax.jpg', // e.g. "https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg"
 
-			// Parallax background size
-			parallaxBackgroundSize: '2300px 950px', // CSS syntax, e.g. "2100px 900px" - currently only pixels are supported (don't use % or auto)
+        // Parallax background size
+        parallaxBackgroundSize: '2600px 1100px', // CSS syntax, e.g. "2100px 900px" - currently only pixels are supported (don't use % or auto)
 
-			// Number of pixels to move the parallax background per slide
-			// - Calculated automatically unless specified
-			// - Set to 0 to disable movement along an axis
-			parallaxBackgroundHorizontal: 46,
-			parallaxBackgroundVertical:   20
+        // Number of pixels to move the parallax background per slide
+        // - Calculated automatically unless specified
+        // - Set to 0 to disable movement along an axis
+        parallaxBackgroundHorizontal: 33,
+        parallaxBackgroundVertical:   20
 
 //			dependencies: [
 //				{ src: 'scripts/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 //				{ src: 'scripts/zoom.js', async: true }
 //			]
 
-		});
+      });
 	</script>
 	<script>
-		var link = document.createElement( 'link' );
-		link.rel = 'stylesheet';
-		link.type = 'text/css';
-		link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-		document.getElementsByTagName( 'head' )[0].appendChild( link );
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
 	</script>
 </body>
 </html>
