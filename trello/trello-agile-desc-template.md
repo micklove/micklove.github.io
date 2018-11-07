@@ -33,13 +33,21 @@
 ---
 
 ### Tasks
+
+> Tasks will be useful when sizing
+
 1. Stuff to do
-2. More stuff to do
+1. More stuff to do
+1. Wire up security scanning
+1. Ensure linting is done
+1. Create pipeline
+1. etc...
 
 ---
 
 ### Resources:
-
+> whatever you feel  is approprriate here, mockups, wiki links
+> whiteboard pictures, etc...
 * [Template, for user stories](./trello-agile-desc-template.md)
 * [Trello markdown][1]
 * [Trello templates][2]
@@ -58,3 +66,15 @@
 [8]: https://github.com/telstra-cip/docs/blob/master/platform//wow.md
 
 ---
+
+### Notes
+
+>Some complementary notes if necessary:
+
+e.g.
+
+> Here's a quote from an email
+
++ Link to a slack channel
++ Details on how to verify etc...
+
