@@ -13,14 +13,14 @@ To create a new Trello card, using the "Create User Story" template, open the [c
 The bookmarklet uses the `fetch` api to retrieve the contents of the User story template file and create a Trello card from that template.
 
 The actual [User story template](./trello-agile-desc-template.md) used in the bookmarklet can be found [here](./trello-agile-desc-template.md). 
-The [raw](https://raw.githubusercontent.com/micklove/micklove.github.io/master/trello/trello-agile-desc-template.md) version can be found [here](https://raw.githubusercontent.com/micklove/admin-stuff/master/trello/trello-agile-desc-template.md)
+The [raw](https://raw.githubusercontent.com/micklove/micklove.github.io/master/trello/trello-agile-desc-template.md) version can be found [here](https://raw.githubusercontent.com/micklove/micklove.github.io/master/trello/trello-agile-desc-template.md)
 
 
 ---
 
 
 ### Creating the embedded javascript bookmarklet link
-The javascript code for the bookmarklet can be found [here](./create-card.js). 
+The javascript code for the bookmarklet can be found [here](./trello/trello-create-user-story-bookmarklet.js). 
 However, before using as a bookmarklet, the javascript needs to be encoded and then turned into an html anchor tag.
  
 Example below:
