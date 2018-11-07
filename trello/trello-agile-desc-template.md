@@ -17,9 +17,24 @@
 
 >If we are discussing the story / issue, the **outcome** should be added to the story, **NOT** in the comments.
 
+
 ---
 
 
+### Tasks
+
+> Tasks will be useful when refining, decomposing, sizing
+
+1. Stuff to do
+1. More stuff to do
+1. Unit tests
+1. Wire up security scanning
+1. Ensure linting is done
+1. Create pipeline
+1. etc...
+
+
+---
 
 
 ### Acceptance Criteria
@@ -29,19 +44,9 @@
 
 1. Acceptance criteria is well defined and testable.
 1. Acceptance criteria is met, before moving the card to done, done.
-
----
-
-### Tasks
-
-> Tasks will be useful when refining, decomposing, sizing
-
-1. Stuff to do
-1. More stuff to do
-1. Wire up security scanning
-1. Ensure linting is done
-1. Create pipeline
-1. etc...
+1. Unit tests have been created
+1. Integration tests (where required) have been created
+1. Docs have been updated
 
 ---
 
