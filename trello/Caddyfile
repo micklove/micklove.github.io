@@ -1,0 +1,16 @@
+# Caddyfile - for testing markdown locally
+#
+# nb: If sharing, add ip below, e.g.
+#
+#   localhost:80, 172.19.1.240:80
+#
+# run with `sudo caddy` (as we are binding to port 80
+#
+#     access using http://localhost/README.md
+#
+localhost:80
+gzip
+log ./access.log
+markdown / {
+
+}
