@@ -20,7 +20,7 @@ The [raw](https://raw.githubusercontent.com/micklove/micklove.github.io/master/t
 
 
 ### Creating the embedded javascript bookmarklet link
-The javascript code for the bookmarklet can be found [here](./trello/trello-create-user-story-bookmarklet.js). 
+The javascript code for the bookmarklet can be found [here](./trello-create-user-story-bookmarklet.js). 
 However, before using as a bookmarklet, the javascript needs to be encoded and then turned into an html anchor tag.
  
 Example below:
