@@ -34,7 +34,7 @@
 
 ### Tasks
 
-> Tasks will be useful when sizing
+> Tasks will be useful when refining, decomposing, sizing
 
 1. Stuff to do
 1. More stuff to do
@@ -46,8 +46,10 @@
 ---
 
 ### Resources:
+
 > whatever you feel  is approprriate here, mockups, wiki links
 > whiteboard pictures, etc...
+
 * [Template, for user stories](./trello-agile-desc-template.md)
 * [Trello markdown][1]
 * [Trello templates][2]
