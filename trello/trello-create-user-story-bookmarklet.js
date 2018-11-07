@@ -1,7 +1,7 @@
 
 (function () {
   let trelloBaseUrl = "https://trello.com/add-card?source=github.com&mode=popup&url=https://trello.com/b/Q2CQMlnJ/1-platform-sprint&name=New-Agile-Card&desc=";
-  let userStoryURL = "https://raw.githubusercontent.com/micklove/admin-stuff/master/trello/trello-agile-desc-example.md";
+  let userStoryURL = "https://raw.githubusercontent.com/micklove/micklove.github.io/master/trello/trello-agile-desc-template.md";
   fetch(userStoryURL)
     .then((resp) => resp.text())
     .then((data) => {
