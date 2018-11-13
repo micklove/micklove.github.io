@@ -38,6 +38,14 @@
 
 
 ### Acceptance Criteria
+> Acceptance criteria should be [INVEST](https://xp123.com/articles/invest-in-good-stories-and-smart-tasks/)
+
++ I – Independent
++ N – Negotiable
++ V – Valuable
++ E – Estimable
++ S – Small
++ T – Testable
 
 > NOTES: Acceptance criteria should be created as a checklist, named Acceptance Criteria
 > Create a new checklist, and paste in multiple lines of text to create multiple checklist items
