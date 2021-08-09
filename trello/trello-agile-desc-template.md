@@ -1,13 +1,12 @@
 
 ---
 
-![V](https://uploads-ssl.webflow.com/5ab350b53c0d5f3d6462a20a/5ab350b53c0d5ff3f762a245_logo-white.svg).
-
+![Q](https://assets-global.website-files.com/607d19d60e3c5bda54c5cda2/60863cc0c315c84b7b7973fc_logo-flatblue.svg)
 ---
 
 ### User Story
 
-**AS A ** a **platform customer**
+**AS A ** a **user**
 **I WANT ** clear definitions, context, scope and goals  
 **SO THAT** I can work efficiently.
 
@@ -60,7 +59,7 @@
 
 ### Resources:
 
-> whatever you feel  is approprriate here, mockups, wiki links
+> whatever you feel  is appropriate here, mockups, wiki links
 > whiteboard pictures, etc...
 
 * [Template, for user stories](./trello-agile-desc-template.md)
