@@ -69,7 +69,7 @@
 * [Scrum guide][4]
 * [Some example user stories][5]
 * [“Advantages of the “As a user, I want” user story template.”][6]
-* [Ways of working (internal)][8]
+
 
 [1]: https://help.trello.com/article/821-using-markdown-in-trello
 [2]: https://help.trello.com/article/800-creating-templates-for-cards-lists-and-boards
@@ -77,7 +77,6 @@
 [4]: http://scrumguides.org/scrum-guide.html
 [5]: https://github.com/AlphaFounders/style-guide/blob/master/agile-user-story.md
 [6]: http://www.mountaingoatsoftware.com/blog/advantages-of-the-as-a-user-i-want-user-story-template
-[8]: https://github.com/telstra-cip/docs/blob/master/platform//wow.md
 
 ---
 
